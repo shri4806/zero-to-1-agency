@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - 0 to 1 Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">0 to 1 Agency</a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="idea-analyzer.html">AI Analyzer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <a href="contact.html" class="nav-cta">Get Started</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Let's Build Something Amazing Together</h1>
+                <p>Ready to turn your idea into reality? Get in touch and let's start your journey from zero to one.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company/Startup Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">What service are you interested in?</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="idea-analysis">AI Idea Analysis</option>
+                                    <option value="brand-identity">Brand Identity</option>
+                                    <option value="mvp-development">MVP Development</option>
+                                    <option value="investor-readiness">Investor Readiness</option>
+                                    <option value="custom">Custom Solution</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Project Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-1000">Under ₹1,000</option>
+                                    <option value="1000-5000">₹1,000 - ₹5,000</option>
+                                    <option value="5000-10000">₹5,000 - ₹10,000</option>
+                                    <option value="10000-25000">₹10,000 - ₹25,000</option>
+                                    <option value="25000-50000">₹25,000 - ₹50,000</option>
+                                    <option value="50000-plus">₹50,000+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div>
+                        <div class="card">
+                            <h3>Get in Touch</h3>
+                            <p>We're here to help bring your startup vision to life. Reach out through any of these channels:</p>
+                            
+                            <div style="margin: 2rem 0;">
+                                <h4>📧 Email</h4>
+                                <p><a href="mailto:hello@0to1agency.com">hello@0to1agency.com</a></p>
+                            </div>
+                            
+                            <div style="margin: 2rem 0;">
+                                <h4>📱 Phone</h4>
+                                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                            </div>
+                            
+                            <div style="margin: 2rem 0;">
+                                <h4>⏰ Response Time</h4>
+                                <p>We typically respond within 24 hours during business days</p>
+                            </div>
+                            
+                            <div style="margin: 2rem 0;">
+                                <h4>🕒 Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 4:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card mt-2">
+                            <h3>Prefer a Quick Call?</h3>
+                            <p>Sometimes it's easier to discuss your project over a quick call. Book a free 15-minute consultation to get started.</p>
+                            <a href="#" class="btn btn-secondary" onclick="alert('Calendar booking feature coming soon! Please use the contact form for now.')">Schedule a Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center mb-2">
+                    <h2>Why Startups Choose Us</h2>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Fast Turnaround</h3>
+                        <p>We understand startup urgency. Our streamlined process delivers quality results quickly without compromising on excellence.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Startup-Focused</h3>
+                        <p>We specialize in startups and understand the unique challenges of building something from scratch. Every solution is tailored for growth.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🤝</div>
+                        <h3>Partnership Approach</h3>
+                        <p>We're not just vendors - we're partners in your success. We invest in your vision and celebrate your victories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="successMessage" style="display: none; position: fixed; top: 20px; right: 20px; background: #4CAF50; color: white; padding: 1rem; border-radius: 8px; z-index: 1000;">
+            Thank you! We'll get back to you soon.
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>0 to 1 Agency</h3>
+                    <p>Building the future, one startup at a time.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="idea-analyzer.html">AI Analyzer</a></li>
+                        <li><a href="brand-identity.html">Brand Identity</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="mailto:hello@0to1agency.com">hello@0to1agency.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 0 to 1 Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Contact Form Validation and Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form elements
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Basic validation
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Show success message
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+            
+            // Reset form
+            this.reset();
+            
+            // In a real application, you would send the form data to your server here
+            console.log('Form submitted:', {
+                name: name,
+                email: email,
+                company: document.getElementById('company').value,
+                service: document.getElementById('service').value,
+                budget: document.getElementById('budget').value,
+                message: message
+            });
+        });
+
+        // Add focus styles for better accessibility
+        document.querySelectorAll('input, textarea, select').forEach(field => {
+            field.addEventListener('focus', function() {
+                this.style.borderColor = '#F95738';
+            });
+            
+            field.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.style.borderColor = '#E5E5E7';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

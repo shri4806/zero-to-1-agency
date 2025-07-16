@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Idea Analyzer - 0 to 1 Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">0 to 1 Agency</a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="idea-analyzer.html">AI Analyzer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <a href="contact.html" class="nav-cta">Get Started</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>AI Idea Analyzer</h1>
+                <p>Get instant insights on market viability, competition analysis, and growth potential for your startup idea</p>
+            </div>
+        </section>
+
+        <!-- Analyzer Tool -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- Analyzer Form -->
+                    <div>
+                        <div class="card">
+                            <h2>Analyze Your Startup Idea</h2>
+                            <p>Our AI-powered tool will analyze your idea and provide comprehensive insights in minutes.</p>
+                            
+                            <form id="ideaAnalyzerForm">
+                                <div class="form-group">
+                                    <label for="startupIdea">Your Startup Idea *</label>
+                                    <textarea id="startupIdea" name="startupIdea" placeholder="Describe your startup idea in detail. What product or service are you planning to build?" required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="problemStatement">Problem You're Solving *</label>
+                                    <textarea id="problemStatement" name="problemStatement" placeholder="What specific problem does your startup solve? Who faces this problem?" required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="solution">Your Solution *</label>
+                                    <textarea id="solution" name="solution" placeholder="How does your product/service solve the problem? What makes it unique?" required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="targetMarket">Target Market</label>
+                                    <input type="text" id="targetMarket" name="targetMarket" placeholder="e.g., Small businesses, College students, Pet owners">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="industry">Industry</label>
+                                    <select id="industry" name="industry">
+                                        <option value="">Select industry</option>
+                                        <option value="technology">Technology</option>
+                                        <option value="healthcare">Healthcare</option>
+                                        <option value="fintech">Fintech</option>
+                                        <option value="ecommerce">E-commerce</option>
+                                        <option value="education">Education</option>
+                                        <option value="food">Food & Beverage</option>
+                                        <option value="travel">Travel & Tourism</option>
+                                        <option value="real-estate">Real Estate</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Analyze My Idea</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- What You'll Get -->
+                    <div>
+                        <div class="card">
+                            <h3>What You'll Get</h3>
+                            <ul class="features">
+                                <li>Market size and potential analysis</li>
+                                <li>Competitive landscape overview</li>
+                                <li>Viability score and recommendations</li>
+                                <li>Target audience insights</li>
+                                <li>Revenue model suggestions</li>
+                                <li>Risk assessment and mitigation</li>
+                                <li>Next steps roadmap</li>
+                                <li>Key metrics to track</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card mt-2">
+                            <h3>Sample Analysis Report</h3>
+                            <p>Our AI analyzer provides detailed insights including:</p>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>📊 <strong>Market Score:</strong> 8.5/10</li>
+                                <li>🎯 <strong>Competition Level:</strong> Medium</li>
+                                <li>💰 <strong>Revenue Potential:</strong> High</li>
+                                <li>⚡ <strong>Time to Market:</strong> 6-9 months</li>
+                                <li>🚀 <strong>Growth Potential:</strong> Excellent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Message (Hidden by default) -->
+        <div id="comingSoonMessage" style="display: none;">
+            <section class="section section-alt">
+                <div class="container text-center">
+                    <h2>🚀 Feature Coming Soon!</h2>
+                    <p>Our AI Idea Analyzer is currently in development and will be available soon. In the meantime, we'd love to personally analyze your idea.</p>
+                    <a href="contact.html" class="btn btn-primary">Book a Strategy Call Instead</a>
+                    <a href="packages.html" class="btn btn-secondary">View Our Packages</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- How It Works -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center mb-2">
+                    <h2>How Our AI Analyzer Works</h2>
+                </div>
+                
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <h3>Input Your Idea</h3>
+                        <p>Describe your startup concept, problem, and solution</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <h3>AI Analysis</h3>
+                        <p>Our AI processes market data and competitive intelligence</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <h3>Get Insights</h3>
+                        <p>Receive comprehensive report with actionable recommendations</p>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <h3>Next Steps</h3>
+                        <p>Use insights to refine your idea and plan your MVP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Use Our Analyzer -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center mb-2">
+                    <h2>Why Use Our AI Analyzer?</h2>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Save Time</h3>
+                        <p>Get comprehensive market research in minutes instead of weeks of manual research.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Data-Driven Insights</h3>
+                        <p>Our AI analyzes thousands of data points to provide accurate market assessments.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">💡</div>
+                        <h3>Actionable Recommendations</h3>
+                        <p>Get specific advice on how to improve your idea and increase success probability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center mb-2">
+                    <h2>What Founders Say</h2>
+                </div>
+                
+                <div class="grid grid-2">
+                    <div class="testimonial">
+                        <p class="testimonial-quote">"The AI Analyzer helped me identify a major flaw in my original business model. It saved me months of pursuing the wrong direction."</p>
+                        <div class="testimonial-author">Alex Thompson, Founder of CloudSync</div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p class="testimonial-quote">"I was amazed by the depth of analysis. The competitive insights alone were worth more than what I paid for the entire package."</p>
+                        <div class="testimonial-author">Maria Garcia, CEO of EduTech Solutions</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Ready to Validate Your Idea?</h2>
+                <p>Don't build in the dark. Get AI-powered insights to increase your chances of success.</p>
+                <a href="#ideaAnalyzerForm" class="btn btn-primary">Analyze My Idea Now</a>
+                <a href="contact.html" class="btn btn-secondary">Talk to an Expert</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>0 to 1 Agency</h3>
+                    <p>Building the future, one startup at a time.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="idea-analyzer.html">AI Analyzer</a></li>
+                        <li><a href="brand-identity.html">Brand Identity</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="mailto:hello@0to1agency.com">hello@0to1agency.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 0 to 1 Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Idea Analyzer Form Submission
+        document.getElementById('ideaAnalyzerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const startupIdea = document.getElementById('startupIdea').value.trim();
+            const problemStatement = document.getElementById('problemStatement').value.trim();
+            const solution = document.getElementById('solution').value.trim();
+            
+            // Basic validation
+            if (!startupIdea || !problemStatement || !solution) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Hide the form section and show coming soon message
+            const formSection = this.closest('.section');
+            const comingSoonMessage = document.getElementById('comingSoonMessage');
+            
+            formSection.style.display = 'none';
+            comingSoonMessage.style.display = 'block';
+            
+            // Scroll to the coming soon message
+            comingSoonMessage.scrollIntoView({ behavior: 'smooth' });
+            
+            // In a real application, you would send this data to your AI analysis service
+            console.log('Idea submitted for analysis:', {
+                startupIdea: startupIdea,
+                problemStatement: problemStatement,
+                solution: solution,
+                targetMarket: document.getElementById('targetMarket').value,
+                industry: document.getElementById('industry').value
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
