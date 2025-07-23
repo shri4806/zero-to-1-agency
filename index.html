@@ -1,200 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setu Studios, Your Bridge from Idea to Launch</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setu Studios, Your Bridge from Idea to Launch</title>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Your Site Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <a href="index.html" class="logo">Setu Studios</a>
-            
-            <!-- Desktop Navigation -->
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="idea-analyzer.html">AI Analyzer</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            
-            <a href="contact.html" class="nav-cta">Get Started</a>
-            
-            <!-- Mobile Menu Toggle -->
-            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">Setu Studios</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="idea-analyzer.html">AI Analyzer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get Started</a>
+      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Setu Studios — Your Bridge from Idea to Launch</h1>
-                <p>AI Insight + Execution for Modern Startups</p>
-                <a href="services.html" class="btn btn-primary">Explore Services</a>
-                <a href="idea-analyzer.html" class="btn btn-outline">Try AI Analyzer</a>
-            </div>
-        </section>
-
-        <!-- Services Preview -->
-        <section class="section">
-            <div class="container">
-                <div class="text-center mb-2">
-                    <h2>What We Do</h2>
-                    <p>We help ambitious founders turn ideas into reality with AI-powered insights and expert execution.</p>
-                </div>
-                
-                <div class="grid grid-3">
-                    <div class="card">
-                        <div class="card-icon">🤖</div>
-                        <h3>AI Idea Analyzer</h3>
-                        <p>Get instant insights on market viability, competition analysis, and growth potential for your startup idea.</p>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-icon">🎨</div>
-                        <h3>MVP Development</h3>
-                        <p>From wireframes to working prototype. We build your minimum viable product with precision and speed.</p>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-icon">🚀</div>
-                        <h3>Brand Identity</h3>
-                        <p>Complete brand identity including logo design, visual guidelines, and marketing materials.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Workflow Section -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="text-center mb-2">
-                    <h2>Our 5-Step Process</h2>
-                    <p>From initial idea to market-ready product, we guide you through every step.</p>
-                </div>
-                
-                <div class="workflow-steps">
-                    <div class="workflow-step">
-                        <div class="step-number">1</div>
-                        <h3>Idea Analysis</h3>
-                        <p>AI-powered market research and feasibility study</p>
-                    </div>
-                    
-                    <div class="workflow-step">
-                        <div class="step-number">2</div>
-                        <h3>Strategy</h3>
-                        <p>Develop comprehensive business and product strategy</p>
-                    </div>
-                    
-                    <div class="workflow-step">
-                        <div class="step-number">3</div>
-                        <h3>Design</h3>
-                        <p>Create compelling brand identity and user experience</p>
-                    </div>
-                    
-                    <div class="workflow-step">
-                        <div class="step-number">4</div>
-                        <h3>Build</h3>
-                        <p>Develop MVP with modern tech stack</p>
-                    </div>
-                    
-                    <div class="workflow-step">
-                        <div class="step-number">5</div>
-                        <h3>Launch</h3>
-                        <p>Go-to-market strategy and investor readiness</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="section testimonials">
-            <div class="container">
-                <div class="text-center mb-2">
-                    <h2>What Our Clients Say</h2>
-                </div>
-                
-                <div class="grid grid-2">
-                    <div class="testimonial">
-                        <p class="testimonial-quote">"Setu Studios transformed our vague idea into a compelling MVP. Their AI analysis saved us months of market research."</p>
-                        <div class="testimonial-author">Sarah Chen, Founder of TechFlow</div>
-                    </div>
-                    
-                    <div class="testimonial">
-                        <p class="testimonial-quote">"The team's expertise in both strategy and execution is unmatched. They helped us secure our first round of funding."</p>
-                        <div class="testimonial-author">Marcus Rodriguez, CEO of DataSync</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="section">
-            <div class="container text-center">
-                <h2>Ready to Build Something Amazing?</h2>
-                <p>Let's turn your idea into a thriving business. Book a free consultation today.</p>
-                <a href="contact.html" class="btn btn-primary">Let's Build Together</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>0 to 1 Agency</h3>
-                    <p>Building the future, one startup at a time.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="services.html">All Services</a></li>
-                        <li><a href="idea-analyzer.html">AI Analyzer</a></li>
-                        <li><a href="brand-identity.html">Brand Identity</a></li>
-                        <li><a href="packages.html">Packages</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">Get in Touch</a></li>
-                        <li><a href="mailto:hello@0to1agency.com">hello@0to1agency.com</a></li>
-                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Setu Studios. All rights reserved.</p>
-            </div>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 data-aos="fade-up" data-aos-delay="100">Setu Studios — Your Bridge from Idea to Launch</h1>
+          <p data-aos="fade-up" data-aos-delay="300">AI Insight + Execution for Modern Startups</p>
+          <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="500">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#ai-analyzer" class="btn btn-secondary">Try AI Analyzer</a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- JavaScript for Mobile Menu -->
-    <script>
-        function toggleMobileMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
+    <!-- Services Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-2" data-aos="fade-up">
+          <h2>What We Do</h2>
+          <p>We help ambitious founders turn ideas into reality with AI-powered insights and expert execution.</p>
+        </div>
 
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-links').classList.remove('active');
-            });
-        });
-    </script>
+        <div class="grid grid-3">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon">🤖</div>
+            <h3>AI Idea Analyzer</h3>
+            <p>Get instant insights on market viability, competition analysis, and growth potential for your startup idea.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon">🎨</div>
+            <h3>MVP Development</h3>
+            <p>From wireframes to working prototype. We build your minimum viable product with precision and speed.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-icon">🚀</div>
+            <h3>Brand Identity</h3>
+            <p>Complete brand identity including logo design, visual guidelines, and marketing materials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Why Setu Studios?</h2>
+        <ul class="features">
+          <li>AI-powered startup insights</li>
+          <li>No-code MVP development</li>
+          <li>Pitch decks and fundraising help</li>
+          <li>1:1 mentorship and incubation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+   <section class="section process-section" id="workflow">
+  <div class="container split-layout">
+    <div class="steps-column">
+      <h2 class="text-orange">Our 5-Step Process</h2>
+      <p class="subtitle">From your first idea to launch, here’s how we get things done — fast, smart, and beautifully.</p>
+
+      <div class="step" data-aos="fade-right">
+        <span class="step-number">1</span>
+        <div class="step-content">
+          <h3>Idea Analysis</h3>
+          <p>AI-powered research & market validation for your startup concept.</p>
+        </div>
+      </div>
+
+      <div class="step" data-aos="fade-right" data-aos-delay="100">
+        <span class="step-number">2</span>
+        <div class="step-content">
+          <h3>Strategy</h3>
+          <p>Business model, competitive research & go-to-market planning.</p>
+        </div>
+      </div>
+
+      <div class="step" data-aos="fade-right" data-aos-delay="200">
+        <span class="step-number">3</span>
+        <div class="step-content">
+          <h3>Design</h3>
+          <p>Crafting your brand identity, UI/UX, and creative visual story.</p>
+        </div>
+      </div>
+
+      <div class="step" data-aos="fade-right" data-aos-delay="300">
+        <span class="step-number">4</span>
+        <div class="step-content">
+          <h3>Build</h3>
+          <p>Using tech that scales, we develop your MVP quickly and cleanly.</p>
+        </div>
+      </div>
+
+      <div class="step" data-aos="fade-right" data-aos-delay="400">
+        <span class="step-number">5</span>
+        <div class="step-content">
+          <h3>Launch</h3>
+          <p>Support, investor decks & ready-to-scale launch assistance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="visual-column" data-aos="zoom-in-left" data-aos-delay="500">
+      <img src="https://assets-global.website-files.com/5f622b1743ca5e57b158b58d/6410b6e67e66ac7f6e7720fc_Product%20Design%20Process%20Diagram.png" alt="Process Visual" class="process-image" />
+    </div>
+  </div>
+</section>
+
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="text-center mb-2">
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="grid grid-2">
+          <div class="testimonial">
+            <p class="testimonial-quote">"Setu Studios transformed our vague idea into a compelling MVP. Their AI analysis saved us months of market research."</p>
+            <div class="testimonial-author">Sarah Chen, Founder of TechFlow</div>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-quote">"The team's expertise in both strategy and execution is unmatched. They helped us secure our first round of funding."</p>
+            <div class="testimonial-author">Marcus Rodriguez, CEO of DataSync</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container text-center">
+        <h2>Ready to Build Something Amazing?</h2>
+        <p>Let's turn your idea into a thriving business. Book a free consultation today.</p>
+        <a href="contact.html" class="btn btn-primary">Let's Build Together</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Setu Studios</h3>
+          <p>Building the future, one startup at a time.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="idea-analyzer.html">AI Analyzer</a></li>
+            <li><a href="brand-identity.html">Brand Identity</a></li>
+            <li><a href="packages.html">Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="mailto:hello@0to1agency.com">hello@0to1agency.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Setu Studios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+      });
+    });
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: 'ease-in-out',
+      offset: 100
+    });
+  </script>
 </body>
 </html>
