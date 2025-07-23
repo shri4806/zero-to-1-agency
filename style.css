@@ -4,14 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* CSS Variables for Brand Colors */
+/* === THEME COLORS FOR SETU STUDIOS === */
 :root {
-  --deep-navy: #0A0F1C;
-  --coral: #F95738;
-  --soft-grey: #F4F4F6;
-  --rich-black: #1C1C1E;
+  --orange: #FF6A00;
+  --black: #0A0A0A;
   --white: #FFFFFF;
-  --light-grey: #E5E5E7;
-  --medium-grey: #8E8E93;
+  --gray: #D1D1D1;
 }
 
 /* Reset and Base Styles */
@@ -29,11 +27,31 @@ body {
 }
 
 /* Typography */
+/* === BASE BODY STYLING === */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--medium-grey);
+  background-color: var(--rich-black);
+  margin: 0;
+  padding: 0;
+}
+
+/* === TYPOGRAPHY === */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--medium-grey);
+  background-color: var(--rich-black);
+  margin: 0;
+  padding: 0;
+}
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: var(--white);
 }
 
 h2 {
@@ -41,12 +59,14 @@ h2 {
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 1.25rem;
+  color: var(--white);
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: var(--white);
 }
 
 p {
@@ -55,33 +75,19 @@ p {
   margin-bottom: 1rem;
   color: var(--medium-grey);
 }
-
-/* Container and Layout */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.section {
-  padding: 5rem 0;
-}
-
-.section-alt {
-  background-color: var(--soft-grey);
-}
-
 /* Header and Navigation */
 header {
-  background-color: var(--white);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--rich-black);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
 }
-
+/* NAVBAR FLEX SETUP */
 nav {
   display: flex;
   justify-content: space-between;
@@ -89,46 +95,52 @@ nav {
   padding: 1rem 2rem;
 }
 
+/* LOGO STYLING */
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--deep-navy);
+  color: var(--orange);
   text-decoration: none;
 }
 
+/* NAV LINKS */
 .nav-links {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 
+/* LINK STYLING */
 .nav-links a {
   text-decoration: none;
-  color: var(--rich-black);
+  color: var(--white);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--coral);
+  color: var(--orange);
 }
 
+/* === NAV CTA BUTTON (Orange Pill Button) === */
 .nav-cta {
-  background-color: var(--coral);
-  color: var(--white);
+  background-color: var(--orange);
+  color: var(--black);
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 106, 0, 0.25);
 }
 
 .nav-cta:hover {
-  background-color: #e04a2f;
+  background-color: #e55a00;
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 106, 0, 0.4);
 }
 
-/* Mobile Menu */
+/* === MOBILE MENU TOGGLE (Hamburger) === */
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -139,38 +151,61 @@ nav {
 .mobile-menu-toggle span {
   width: 25px;
   height: 3px;
-  background-color: var(--deep-navy);
+  background-color: var(--orange);
   transition: 0.3s;
 }
-
-/* Main Content */
+/* === Main Content Padding === */
 main {
   margin-top: 80px; /* Account for fixed header */
 }
 
-/* Hero Section */
+/* === HERO SECTION – Setu Studios Branding === */
 .hero {
-  background: linear-gradient(135deg, var(--deep-navy) 0%, #1a2036 100%);
+  background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
   color: var(--white);
   text-align: center;
-  padding: 8rem 0;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
+/* GLOWING LIGHT EFFECT (OPTIONAL) */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 106, 0, 0.3), transparent 70%);
+  z-index: 0;
+  filter: blur(80px);
+}
+
+/* HERO HEADLINE */
 .hero h1 {
+  font-size: 3.5rem;
   color: var(--white);
   margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
+/* HERO PARAGRAPH */
 .hero p {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2.5rem;
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
 }
 
-/* Buttons */
+/* === BUTTONS – Setu Studios Theme === */
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -181,28 +216,37 @@ main {
   cursor: pointer;
   border: none;
   font-size: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
+/* PRIMARY BUTTON – Solid Orange */
 .btn-primary {
-  background-color: var(--coral);
-  color: var(--white);
+  background-color: var(--orange);
+  color: var(--black);
+  box-shadow: 0 4px 12px rgba(255, 106, 0, 0.25);
 }
 
 .btn-primary:hover {
-  background-color: #e04a2f;
+  background-color: #e55a00;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.4);
 }
 
+/* SECONDARY BUTTON – Transparent w/ Orange Border */
 .btn-secondary {
   background-color: transparent;
-  color: var(--coral);
-  border: 2px solid var(--coral);
+  color: var(--orange);
+  border: 2px solid var(--orange);
 }
 
 .btn-secondary:hover {
-  background-color: var(--coral);
-  color: var(--white);
+  background-color: var(--orange);
+  color: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 106, 0, 0.25);
 }
+
 
 .btn-outline {
   background-color: transparent;
